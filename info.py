@@ -25,8 +25,8 @@ MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/All_Reality_Sho
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1003738063927').split()]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-DATABASE_URI = environ.get('DATABASE_URI',python -m pip install "pymongo[srv]==3.12")
-DATABASE_NAME = environ.get('DATABASE_NAME', "autofilter")
+DATABASE_URI = environ.get('DATABASE_URI',"mongodb+srv://moviebot308_db_user:GFw9jmwXZG9vWHQX@moviebot.fmlvnde.mongodb.net/?appName=moviebot")
+DATABASE_NAME = environ.get('DATABASE_NAME', "moviebot")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
@@ -46,12 +46,12 @@ IS_VERIFY = is_enabled('IS_VERIFY', True)
 #---------------------------------------------------------------
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/")
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
-SHORTENER_API = environ.get("SHORTENER_API", "3097623f852197a9ce40d1212aaa8bbf2803e799")
-SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", 'omegalinks.in')
-SHORTENER_API2 = environ.get("SHORTENER_API2", "3097623f852197a9ce40d1212aaa8bbf2803e799")
-SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", 'omegalinks.in')
-SHORTENER_API3 = environ.get("SHORTENER_API3", "3097623f852197a9ce40d1212aaa8bbf2803e799")
-SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", 'omegalinks.in')
+SHORTENER_API = environ.get("SHORTENER_API", "4ac1c6518ceef73f202185cd89ed98ff464fe023")
+SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", 'gplink.com')
+SHORTENER_API2 = environ.get("SHORTENER_API2", "4ac1c6518ceef73f202185cd89ed98ff464fe023")
+SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", 'gplink.com')
+SHORTENER_API3 = environ.get("SHORTENER_API3", "4ac1c6518ceef73f202185cd89ed98ff464fe023")
+SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", 'gplink.com')
 TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "14400"))
 THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "14400"))
 #---------------------------------------------------------------
